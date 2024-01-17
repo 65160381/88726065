@@ -25,7 +25,7 @@ function deleteTodo (index) {
     renderTodoList();
 }
 
-// ตรวจสอบ/เลิกการเสร็จบราชการ Todo
+//ตรวจสอบ/เลิกการเสร็จบราชการ Todo
 function toggleComplete(index) {
     todos[index].completed = !todos[index].completed;
     renderTodoList();
