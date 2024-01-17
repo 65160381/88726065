@@ -19,11 +19,15 @@ document.addEventListener("DOMContentLoaded", function () {
             todoInput.value = "";
     }
 }
-// ลบรายการ Todo
-function deleteTodo (index) { 
-    todos.splice(index, 1); 
+
+function deleteTodo(index) {
+    // ลบสิ่งที่ต้องทำที่ตำแหน่งที่ระบุออกจากอาร์เรย์ 'todos'
+    todos.splice(index, 1);
+    
+    // หลังจากที่ลบสิ่งที่ต้องทำแล้ว ให้ render รายการสิ่งที่ต้องทำใหม่
     renderTodoList();
 }
+
 
 // ตรวจสอบ/เลิกการเสร็จบราชการ Todo
 function toggleComplete(index) {
