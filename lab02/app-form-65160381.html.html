@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Job Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        table {
+            width: 50%;
+            max-width: 600px; 
+            margin: 20px auto;
+        }
+
+        table td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        button {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto; 
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+    <body>
+        <h2>ใบสมัครงาน</h2>
+        <form action="Proess-order.php" method="post">
+            <table>
+                <tr>
+                    <td><b><label for="name">ชื่อ *</label></b></td>
+                    <td><b><label for="Lname">นามสกุล *</label></b></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="name" name="name" style="width: 100%;" required></td>
+                    <td><input type="text" id="Lname" name="Lname" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b><label for="email">อีเมล *</label></b></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" id="email" name="email" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b><label for="web">เว็บไซร์ผลงาน</label></b></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" id="web" name="web" placeholder="http://" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><b><label for="Position">ตำแหน่งที่ต้องการสมัคร *</label></b></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="text" id="Position" name="Position" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><b><label for="Desired">เงินเดือนที่ต้องการ </label></b></td>
+                    <td><b><label for="startwork">จะเริ่มงานได้เมื่อไหร่ </label></b></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="Desired" name="Desired" style="width: 100%;" required></td>
+                    <td><input type="text" id="startwork" name="startwork" style="width: 100%;" required></td>
+                </tr>
+                <tr>
+                    <td><b><label for="call">โทรศัพท์มือถือ *</label></b></td>
+                    <td><b><label for="Homephone">โทรศัพท์บ้าน *</label></b></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="call" name="call" style="width: 100%;" required></td>
+                    <td><input type="text" id="Homephone" name="Homephone" style="width: 100%;" required></td>
+                </tr>  
+                        
+            </table>
+            <table>
+                <tr><td><b><label for="Location">คุณสะดวกที่จะย้ายที่อยู่หรือไม่</label></b></td></tr>
+                <tr>
+                    <td>
+                        <input type="radio" id="yes" name="Location" value="yes" required />
+                        <label for="yes">สะดวก</label>
+                        <input type="radio" id="no" name="Location" value="no" required />
+                        <label for="no">ไม่สะดวก</label>
+                        <input type="radio" id="unsure" name="Location" value="unsure" required />
+                        <label for="unsure">ไม่แน่ใจ</label>
+                    </td>
+                </tr> 
+            </table>
+            <table>
+                    <tr><td><b><label for="Jobdescription">ลักษณะงานที่ทำในที่ทำงานล่าสุด</label></b></td></tr>
+                    <tr>
+                        <td colspan="3"><input type="text" id="Jobdescription" name="Jobdescription" style="width: 97%;" required></td>
+                    </tr>  
+                    <tr><td><b><label for="question">คำถาม</label></b></td></tr> 
+                    <tr>
+                        <td colspan="3"><textarea name="question" id="" cols="62" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>                               
+                            <button type="submit">ส่งใบสมัคร</button> 
+                        </td>
+                    </tr>     
+            </table>
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color:rgb(185, 179, 175);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+main {
+   flex: 0;
+   padding: 2rem;
+ }
+section {
+   background-color: white;
+   border: 1px solid #ddd;
+   border-radius: 10px;
+   padding: 1rem;
+   margin-bottom: 5rem;
+ }
+.main-page-body {
+  flex: 1;
+  padding: 2rem;
+}
+nav{
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    width: 50%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+.date-time-color {
+    background-color: #515151;
+
+}
+.mainheader {
+    background-color: #0fd6e4;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  }
+footer{
+    width: 50%;
+    max-width: 600px; 
+    margin: 20px auto;
+}
+.study-time-color {
+    background-color:#C0D0FF ;
+}
+table, th, td {
+    border: 1px solid white;
+    text-align: center;
+    height: 50px ;
+    width: 1300px ;
+  }
+h1 {
+    color: rgb(0, 0, 0);
+}
+h2 {
+    background-color: #0fd6e4;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    width: 50%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+p {
+    text-align: center;
+}
+.timetableheader-color {
+    background-color: #8B8989;
+}
+h3 {
+    color: #FFF;
+}
+table {
+    border-collapse: collapse;
+    font-weight: normal;
+}
+
+button {
+    background-color: #05fdfd;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto; 
+}
+.mainfooter {
+    background-color: #0fd6e4;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+  }
+.img-container {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: vh; /* Adjust the height as needed */
+}
+
+
+input[type="radio"] {
+    margin-right: 5px;
+}
