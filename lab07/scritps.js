@@ -19,17 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
             todoInput.value = "";
     }
 }
-// ลบรายการ Todo
-function deleteTodo (index) { 
-    todos.splice(index, 1); 
-    renderTodoList();
-}
 
-// ตรวจสอบ/เลิกการเสร็จบราชการ Todo
-function toggleComplete(index) {
-    todos[index].completed = !todos[index].completed;
-    renderTodoList();
-}
 
 // แสดงรายการ Todo บนหน้าเว็บ
 function renderTodoList() {
