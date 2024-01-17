@@ -20,7 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 }
 // ลบรายการ Todo
-
+function deleteTodo (index) { 
+    todos.splice(index, 1); 
+    renderTodoList();
+}
 
 // ตรวจสอบ/เลิกการเสร็จบราชการ Todo
 function toggleComplete(index) {
